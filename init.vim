@@ -1,7 +1,6 @@
 call plug#begin(stdpath('data') . '/plugged')
 
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-commentary'
 
