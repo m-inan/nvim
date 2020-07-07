@@ -110,9 +110,12 @@ let g:gitgutter_set_sign_backgrounds = 1
 
 set updatetime=150
 
-nmap <silent><leader>gu <Plug>(GitGutterUndoHunk)
-nmap <silent><leader>gp <Plug>(GitGutterPreviewHunk)
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
+
+nmap <silent><leader>ghu <Plug>(GitGutterUndoHunk)
 nmap <silent><leader>ghs <Plug>(GitGutterStageHunk)
+nmap <silent><leader>ghp <Plug>(GitGutterPreviewHunk)
 nmap <silent><leader>ght :GitGutterLineHighlightsToggle<CR>
 
 highlight GitGutterAdd    guifg=#33d157
