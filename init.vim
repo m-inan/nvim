@@ -63,10 +63,13 @@ nmap <leader>h <C-W><C-H>
 nmap <leader>n :bn<CR>
 nmap <leader>p :bp<CR>
 
-nmap <leader>s :w<CR>
+nnoremap <leader>s :w<CR>
 
 nmap <leader>db :bd<CR>
 nmap <leader>dab :%bd<CR>
+
+nmap <leader>hs :split<CR>
+nmap <leader>vs :vsplit<CR>
 
 nnoremap <silent> <Leader>+ :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical resize -5<CR>
