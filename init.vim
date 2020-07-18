@@ -1,16 +1,16 @@
 call plug#begin(stdpath('data') . '/plugged')
 
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-commentary'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   " Git
-  Plug 'airblade/vim-gitgutter'
   Plug 'tpope/vim-fugitive'
+  Plug 'airblade/vim-gitgutter'
   
   " FZF
-  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
   " Status bar
   Plug 'bling/vim-bufferline'
@@ -18,12 +18,16 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'vim-airline/vim-airline-themes'
 
   " Language Syntax
-  Plug 'HerringtonDarkholme/yats.vim'
-  Plug 'pangloss/vim-javascript'
+  Plug 'fatih/vim-go'
+  Plug 'vim-jp/vim-cpp'
   Plug 'jparise/vim-graphql'
-  Plug 'dart-lang/dart-vim-plugin'
   Plug 'thosakwe/vim-flutter'
+  Plug 'pangloss/vim-javascript'
   Plug 'pantharshit00/vim-prisma'
+  Plug 'maxmellon/vim-jsx-pretty'
+  Plug 'vim-python/python-syntax'
+  Plug 'dart-lang/dart-vim-plugin'
+  Plug 'HerringtonDarkholme/yats.vim'
 
   " Color
   Plug 'arzg/vim-colors-xcode'
