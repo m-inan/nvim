@@ -67,16 +67,16 @@ nmap <leader>h <C-W><C-H>
 nmap <leader>n :bn<CR>
 nmap <leader>p :bp<CR>
 
-nnoremap <leader>s :w<CR>
-
 nmap <leader>db :bd<CR>
-nmap <leader>dab :%bd<CR>
 
 nmap <leader>hs :split<CR>
 nmap <leader>vs :vsplit<CR>
 
-nnoremap <silent> <Leader>+ :vertical resize +5<CR>
+nnoremap <leader>s :w<CR>
+nnoremap <silent> <Leader>= :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical resize -5<CR>
+
+vnoremap <leader>y "*y
 
 " End My Config
 
@@ -90,16 +90,11 @@ nnoremap <silent> <Leader>- :vertical resize -5<CR>
   " Highlight the symbol and its references when holding the cursor.
   autocmd CursorHold * silent call CocActionAsync('highlight')
 
-  " Symbol renaming.
-  nmap <leader>rn <Plug>(coc-rename)
-
   " Use K to show documentation in preview window.
   nnoremap <silent> K :call <SID>show_documentation()<CR>
 
-  " Manage extensions.
-  nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
   " Show commands.
-  nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
+  nnoremap <silent><nowait> <space>c :<C-u>CocList commands<cr>
 
   function! s:show_documentation()
     if (index(['vim','help'], &filetype) >= 0)
@@ -120,10 +115,10 @@ set updatetime=150
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 
-nmap <silent><leader>ghu <Plug>(GitGutterUndoHunk)
-nmap <silent><leader>ghs <Plug>(GitGutterStageHunk)
-nmap <silent><leader>ghp <Plug>(GitGutterPreviewHunk)
-nmap <silent><leader>ght :GitGutterLineHighlightsToggle<CR>
+nmap <silent><leader>gu <Plug>(GitGutterUndoHunk)
+nmap <silent><leader>ga <Plug>(GitGutterStageHunk)
+nmap <silent><leader>gp <Plug>(GitGutterPreviewHunk)
+nmap <silent><leader>gt :GitGutterLineHighlightsToggle<CR>
 
 highlight GitGutterAdd    guifg=#33d157
 highlight GitGutterChange guifg=#ff9f0e 
