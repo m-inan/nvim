@@ -73,6 +73,7 @@ nmap <leader>hs :split<CR>
 nmap <leader>vs :vsplit<CR>
 
 nnoremap <leader>s :w<CR>
+nnoremap <leader>e :E<CR>
 nnoremap <silent> <Leader>= :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical resize -5<CR>
 
