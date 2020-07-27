@@ -69,8 +69,8 @@ nmap <leader>p :bp<CR>
 
 nmap <leader>db :bd<CR>
 
-nmap <leader>hs :split<CR>
-nmap <leader>vs :vsplit<CR>
+nmap <leader>H :split<CR>
+nmap <leader>V :vsplit<CR>
 
 nnoremap <leader>s :w<CR>
 nnoremap <leader>e :E<CR>
