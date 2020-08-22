@@ -97,6 +97,9 @@ vnoremap <leader>Y "*y
   " Show commands.
   nnoremap <silent><nowait> <space>c :<C-u>CocList commands<cr>
 
+  " If enter is pressed after the brackets are opened, add an extra line
+  inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
   function! s:show_documentation()
     if (index(['vim','help'], &filetype) >= 0)
       execute 'h '.expand('<cword>')
