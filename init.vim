@@ -153,6 +153,8 @@ let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Todo
 
 nmap <silent><leader>t :GFiles<CR>
 nmap <silent><leader>b :Buffers<CR>
+nmap <silent><leader>/ :BLines<CR>
+nmap <silent><leader>f :Rg<CR>
 
 
 " Vim Colors Xcode
