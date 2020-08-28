@@ -42,6 +42,7 @@ syntax on
 
 set number
 set hidden
+set nowrap
 set expandtab
 set tabstop=2
 set autoindent
@@ -49,6 +50,7 @@ set cursorline
 set nohlsearch
 set smartindent
 set shiftwidth=2
+set pumheight=20
 set softtabstop=2
 set termguicolors
 set relativenumber
