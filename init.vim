@@ -28,6 +28,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'vim-python/python-syntax'
   Plug 'dart-lang/dart-vim-plugin'
   Plug 'HerringtonDarkholme/yats.vim'
+  Plug 'stevearc/vim-arduino'
 
   " Color
   Plug 'arzg/vim-colors-xcode'
