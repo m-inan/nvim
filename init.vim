@@ -87,6 +87,10 @@ vnoremap <leader>Y "*y
 
 
 " Coc Nvim
+  " Use `[g` and `]g` to navigate diagnostics
+  nmap <silent> [g <Plug>(coc-diagnostic-prev)
+  nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
   " GoTo code navigation.
   nmap <silent> gd <Plug>(coc-definition)
   nmap <silent> gi <Plug>(coc-implementation)
