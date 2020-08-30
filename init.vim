@@ -59,7 +59,7 @@ set background=dark
 
 colorscheme xcodewwdc
 
-let mapleader = " "
+let mapleader = ' '
 
 nmap <leader>j <C-W><C-J>
 nmap <leader>k <C-W><C-K>
