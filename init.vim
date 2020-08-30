@@ -60,6 +60,7 @@ set background=dark
 colorscheme xcodewwdc
 
 let mapleader = ' '
+let g:netrw_bufsettings = 'nu'
 
 nmap <leader>j <C-W><C-J>
 nmap <leader>k <C-W><C-K>
