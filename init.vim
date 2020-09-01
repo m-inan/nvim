@@ -12,11 +12,6 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'junegunn/fzf.vim'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
-  " Status bar
-  Plug 'bling/vim-bufferline'
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
-
   " Language Syntax
   Plug 'fatih/vim-go'
   Plug 'vim-jp/vim-cpp'
@@ -132,10 +127,6 @@ nmap <silent><leader>gs :G<CR>
 
 nmap <silent><leader>gj :diffget //2<CR>
 nmap <silent><leader>gl :diffget //3<CR>
-
-
-" Vim Airline
-let g:airline_theme='monochrome'
 
 
 " FZF
