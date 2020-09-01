@@ -43,6 +43,8 @@ set tabstop=2
 set autoindent
 set cursorline
 set nohlsearch
+set splitbelow
+set splitright
 set smartindent
 set shiftwidth=2
 set pumheight=20
