@@ -127,6 +127,7 @@ highlight DiffDelete guifg=#ff385f
 
 " Git Fugitive
 nmap <silent><leader>gs :G<CR>
+nmap <silent><leader>gc :Gcommit<CR>
 
 nmap <silent><leader>gj :diffget //2<CR>
 nmap <silent><leader>gl :diffget //3<CR>
