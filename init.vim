@@ -66,6 +66,7 @@ nmap <leader>h <C-W><C-H>
 
 nmap <leader>n :bn<CR>
 nmap <leader>p :bp<CR>
+nmap <leader>q :b#<bar>bd#<CR>
 
 nmap <leader>db :bd<CR>
 
