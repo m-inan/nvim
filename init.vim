@@ -15,6 +15,7 @@ call plug#begin(stdpath('data') . '/plugged')
   " Language Syntax
   Plug 'fatih/vim-go'
   Plug 'vim-jp/vim-cpp'
+  Plug 'keith/swift.vim'
   Plug 'jparise/vim-graphql'
   Plug 'thosakwe/vim-flutter'
   Plug 'pangloss/vim-javascript'
@@ -126,8 +127,8 @@ highlight DiffDelete guifg=#ff385f
 
 
 " Git Fugitive
-nmap <silent><leader>gs :G<CR>
-nmap <silent><leader>gc :Gcommit<CR>
+nmap <silent><leader>gs :top G<CR>
+nmap <silent><leader>gc :top Gcommit<CR>
 
 nmap <silent><leader>gj :diffget //2<CR>
 nmap <silent><leader>gl :diffget //3<CR>
