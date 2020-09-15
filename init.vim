@@ -70,6 +70,7 @@ nmap <leader>p :bp<CR>
 nmap <leader>q :b#<bar>bd#<CR>
 
 nmap <leader>db :bd<CR>
+nmap <leader>dba :%bd<CR>
 
 nmap <leader>H :split<CR>
 nmap <leader>V :vsplit<CR>
