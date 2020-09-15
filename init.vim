@@ -80,8 +80,8 @@ nnoremap <leader>e :E<CR>
 nnoremap <silent> <Leader>= :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical resize -5<CR>
 
-noremap <leader>P "*p
-vnoremap <leader>Y "*y
+vnoremap <leader>p "*p
+vnoremap <leader>y "*y
 
 " End My Config
 
