@@ -86,6 +86,16 @@ vnoremap <leader>Y "*y
 
 
 " Coc Nvim
+  let g:coc_global_extensions = [
+      \'coc-json', 
+      \'coc-pairs',
+      \'coc-python',
+      \'coc-flutter', 
+      \'coc-tsserver',
+      \'coc-snippets',
+      \'coc-prettier',
+      \'coc-sourcekit',
+      \]
   " Use `[g` and `]g` to navigate diagnostics
   nmap <silent> [g <Plug>(coc-diagnostic-prev)
   nmap <silent> ]g <Plug>(coc-diagnostic-next)
