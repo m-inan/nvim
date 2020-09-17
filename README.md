@@ -37,6 +37,6 @@ brew install tmux
 
 ```console
 # move .tmux.conf home directory
-cd ~/.config/nvim/.tmux.conf ~/.tmux.conf
+cp ~/.config/nvim/.tmux.conf ~/.tmux.conf
 ```
 
