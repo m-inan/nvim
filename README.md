@@ -25,12 +25,12 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```
 :PlugInstall
 ```
-### Rip Grep
+#### Rip Grep
 ```
 brew install ripgrep
 ```
 
-### Tmux
+#### Tmux
 ```console
 brew install tmux
 ```
