@@ -141,8 +141,8 @@ highlight DiffDelete guifg=#ff385f
 nmap <silent><leader>gs :top G<CR>
 nmap <silent><leader>gc :top Gcommit<CR>
 
-nmap <silent><leader>gj :diffget //2<CR>
-nmap <silent><leader>gl :diffget //3<CR>
+nnoremap <silent><leader>gh :diffget //2<CR>
+nnoremap <silent><leader>gl :diffget //3<CR>
 
 
 " FZF
