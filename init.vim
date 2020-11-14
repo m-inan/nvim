@@ -42,6 +42,7 @@ set nowrap
 set expandtab
 set tabstop=2
 set autoindent
+set ignorecase
 set cursorline
 set nohlsearch
 set splitbelow
@@ -72,13 +73,16 @@ nmap <leader>q :b#<bar>bd#<CR>
 nmap <leader>db :bd<CR>
 nmap <leader>dba :%bd<CR>
 
-nmap <leader>H :split<CR>
-nmap <leader>V :vsplit<CR>
+nmap <leader>s :split<CR>
+nmap <leader>v :vsplit<CR>
 
-nnoremap <leader>s :w<CR>
+nnoremap <leader>w :w<CR>
 nnoremap <leader>e :E<CR>
-nnoremap <silent> <Leader>= :vertical resize +5<CR>
-nnoremap <silent> <Leader>- :vertical resize -5<CR>
+
+nnoremap <silent> + :resize +5<CR>
+nnoremap <silent> _ :resize -5<CR>
+nnoremap <silent> = :vertical resize +5<CR>
+nnoremap <silent> - :vertical resize -5<CR>
 
 vnoremap <leader>p "*p
 vnoremap <leader>y "*y
@@ -118,7 +122,7 @@ let g:gitgutter_map_keys = 0
 let g:gitgutter_sign_allow_clobber = 1
 let g:gitgutter_set_sign_backgrounds = 1
 
-set updatetime=100
+set updatetime=50
 
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
