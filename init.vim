@@ -87,6 +87,9 @@ nnoremap <silent> - :vertical resize -5<CR>
 vnoremap <leader>p "*p
 vnoremap <leader>y "*y
 
+nnoremap <leader>, <C-o>
+nnoremap <leader>. <C-i>
+
 " End My Config
 
 
