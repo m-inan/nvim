@@ -55,6 +55,7 @@ set termguicolors
 set relativenumber
 set encoding=UTF-8
 set background=dark
+set formatoptions-=cro
 
 colorscheme xcodewwdc
 
