@@ -13,18 +13,13 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
   " Language Syntax
-  Plug 'fatih/vim-go'
-  Plug 'vim-jp/vim-cpp'
-  Plug 'keith/swift.vim'
   Plug 'jparise/vim-graphql'
   Plug 'thosakwe/vim-flutter'
   Plug 'pangloss/vim-javascript'
-  Plug 'pantharshit00/vim-prisma'
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'vim-python/python-syntax'
   Plug 'dart-lang/dart-vim-plugin'
   Plug 'HerringtonDarkholme/yats.vim'
-  Plug 'stevearc/vim-arduino'
 
   " Color
   Plug 'arzg/vim-colors-xcode'
