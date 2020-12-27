@@ -164,6 +164,7 @@ let g:xcodewwdc_emph_funcs = 0
 let g:xcodewwdc_emph_idents = 0
 let g:xcodewwdc_match_paren_style = 1
 let g:xcodewwdc_dim_punctuation = 0
+let g:xcodewwdc_green_comments = 1
 
 hi Comment        cterm=italic gui=italic
 hi SpecialComment cterm=italic gui=italic
