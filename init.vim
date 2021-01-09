@@ -100,9 +100,8 @@ nnoremap <leader>. <C-i>
       \'coc-prettier',
       \'coc-sourcekit',
       \]
-  " Use `[g` and `]g` to navigate diagnostics
-  nmap <silent> [g <Plug>(coc-diagnostic-prev)
-  nmap <silent> ]g <Plug>(coc-diagnostic-next)
+  " Use `gg` to navigate diagnostics
+  nmap <silent> gg <Plug>(coc-diagnostic-next)
 
   " GoTo code navigation.
   nmap <silent> gd <Plug>(coc-definition)
@@ -168,4 +167,32 @@ let g:xcodewwdc_green_comments = 1
 
 hi Comment        cterm=italic gui=italic
 hi SpecialComment cterm=italic gui=italic
+
+" green comment
+hi Comment guifg=#23ad68 guibg=NONE gui=NONE cterm=NONE
+hi SpecialComment guifg=#35d585 guibg=NONE gui=NONE cterm=NONE
+hi Todo guifg=#35d585 guibg=NONE gui=bold cterm=bold
+
+" emph types
+hi Typedef guifg=#b9b5f6 guibg=NONE gui=NONE cterm=NONE
+hi LocalType guifg=#c7faa4 guibg=NONE gui=NONE cterm=NONE
+hi LibraryType guifg=#64dcd4 guibg=NONE gui=NONE cterm=NONE
+
+" emph funcs
+hi FunctionDef guifg=#8884c5 guibg=NONE gui=NONE cterm=NONE
+hi LocalFunc guifg=#94c66e guibg=NONE gui=NONE cterm=NONE
+hi LibraryFunc guifg=#00aba4 guibg=NONE gui=NONE cterm=NONE
+
+" emph idents
+hi IdentifierDef guifg=#8884c5 guibg=NONE gui=NONE cterm=NONE
+hi LocalIdent guifg=#94c66e guibg=NONE gui=NONE cterm=NONE
+hi LibraryIdent guifg=#00aba4 guibg=NONE gui=NONE cterm=NONE
+
+" match paren style
+hi MatchParen guifg=#292c36 guibg=#fef937 gui=NONE cterm=NONE
+
+" punctuation
+hi Delimiter guifg=#e7e8eb guibg=NONE gui=NONE cterm=NONE
+hi Operator guifg=#e7e8eb guibg=NONE gui=NONE cterm=NONE
+
 
