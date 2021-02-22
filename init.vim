@@ -93,7 +93,6 @@ nnoremap <leader>. <C-i>
   let g:coc_global_extensions = [
       \'coc-json', 
       \'coc-pairs',
-      \'coc-python',
       \'coc-flutter', 
       \'coc-tsserver',
       \'coc-snippets',
