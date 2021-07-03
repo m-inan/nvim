@@ -57,6 +57,11 @@ colorscheme xcodewwdc
 let mapleader = ' '
 let g:netrw_bufsettings = 'nu nobl'
 
+nmap J <C-W><C-J>
+nmap K <C-W><C-K>
+nmap L <C-W><C-L>
+nmap H <C-W><C-H>
+
 nmap <leader>j <C-W><C-J>
 nmap <leader>k <C-W><C-K>
 nmap <leader>l <C-W><C-L>
@@ -64,7 +69,7 @@ nmap <leader>h <C-W><C-H>
 
 nmap <leader>n :bn<CR>
 nmap <leader>p :bp<CR>
-nmap <leader>q :b#<bar>bd#<CR>
+nmap <silent>ge :q<CR>
 
 nmap <leader>db :bd<CR>
 nmap <leader>dba :%bd<CR>
@@ -93,12 +98,14 @@ nnoremap <leader>. <C-i>
   let g:coc_global_extensions = [
       \'coc-json', 
       \'coc-pairs',
+      \'coc-python',
       \'coc-flutter', 
       \'coc-tsserver',
       \'coc-snippets',
       \'coc-prettier',
       \'coc-sourcekit',
       \]
+
   " Use `gg` to navigate diagnostics
   nmap <silent> gg <Plug>(coc-diagnostic-next)
 
@@ -121,8 +128,8 @@ let g:gitgutter_set_sign_backgrounds = 1
 
 set updatetime=50
 
-nmap ]h <Plug>(GitGutterNextHunk)
-nmap [h <Plug>(GitGutterPrevHunk)
+nmap gn <Plug>(GitGutterNextHunk)
+nmap gp <Plug>(GitGutterPrevHunk)
 
 nmap <silent><leader>gu <Plug>(GitGutterUndoHunk)
 nmap <silent><leader>ga <Plug>(GitGutterStageHunk)
@@ -139,8 +146,8 @@ highlight DiffDelete guifg=#ff385f
 
 
 " Git Fugitive
-nmap <silent><leader>gs :top G<CR>
-nmap <silent><leader>gc :top Gcommit<CR>
+nmap <silent>gs :top G<CR>
+nmap <silent><leader>gc :top Git commit<CR>
 
 nnoremap <silent><leader>gh :diffget //2<CR>
 nnoremap <silent><leader>gl :diffget //3<CR>
